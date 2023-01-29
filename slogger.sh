@@ -70,7 +70,7 @@ ssh
 }
 
 
-#checks if the tool "Nmap" is installed
+#checks if the tool Nmap is installed
 function check1() {
 
 var1=$(dpkg -s nmap)
@@ -87,7 +87,7 @@ echo "<===============================================================>"
 fi
 
 }
-#will install "Nmap" if needed
+#will install Nmap if needed
 function inst1() {
 	echo -e " \033[1;93m installing nmap \e[0m"
 	apt install nmap -y
@@ -96,7 +96,7 @@ echo "<===============================================================>"
 	#exit
 }
 
-#checks if the tool "whois" is installed
+#checks if the tool whois is installed
 function check2() {
 
 var1=$(dpkg -s whois)
@@ -112,7 +112,7 @@ echo "<===============================================================>"
 fi
 
 }
-#will install the "whois" if needed
+#will install the whois if needed
 function inst2() {
 	echo -e " \033[1;93m installing whois \e[0m"
 	apt install whois -y
@@ -121,7 +121,7 @@ echo "<===============================================================>"
 	#exit
 }
 
-#checks if "kali-anonsurf" is installed
+#checks if kali-anonsurf is installed
 function check3() {
 
 var1=$(dpkg -s Kali-anonsurf)
@@ -147,7 +147,7 @@ function inst3() {
 	echo "<===============================================================>"
 	#exit
 }
-#checks if the tool "sshpass" is installed
+#checks if the tool sshpass is installed
 function check4() {
 
 var1=$(dpkg -s sshpass)
@@ -163,7 +163,7 @@ echo "<===============================================================>"
 fi
 
 }
-#installs the tool "sshpass" if needed
+#installs the tool sshpass if needed
 function inst4() {
 	
 	echo -e " \033[1;93m installing sshpas"
@@ -173,7 +173,7 @@ function inst4() {
 	echo "<===============================================================>"
 	#exit
 }
-#checks if thetool "geoip-bin" is installed
+#checks if thetool geoip-bin is installed
 function check5() {
 
 var1=$(dpkg -s geoip-bin)
@@ -189,7 +189,7 @@ echo "<===============================================================>"
 fi
 
 }
-#will install the tool "geoip-bin" if needed
+#will install the tool geoip-bin if needed
 function inst5() {
 	
 	echo -e " \033[1;93m installing geoiplookup"
@@ -204,7 +204,7 @@ function inst5() {
 #this func will ask the user for ip input and
 #connect via sshpass and run the commands:Nmap,whois,uptime,geoiplookup
 #clone a second script form github (2nd script will shred the auth.log file of the taraget)
-#so taraget wont know what info was taken/exploited
+#so taraget won't know what info was taken/exploited
 function ssh() {
 
 echo 'kali' | sudo -S service ssh start
