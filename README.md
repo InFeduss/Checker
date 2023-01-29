@@ -1,4 +1,5 @@
 # Checker
+#check the script itself for more information
 # in this script you will be able to check several tools like:
 # Nmap,geoip-bin,sshpass,kali-anonsurf,who is
 # if the tools stated above are NOT installed the script will download it for you
