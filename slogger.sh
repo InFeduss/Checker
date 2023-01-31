@@ -229,10 +229,10 @@ echo "<==========================================================>"
 VPPASS='kali'
 VPUSER='kali'
 
-sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "echo 'kali' | sudo -S git clone https://github.com/InFeduss/Checker.git 1>/dev/null && cd Checker 2>/dev/null && echo 'kali' | sudo -S chmod 777 Downloader.sh 1>/dev/null && echo 'kali' | sudo -S bash Downloader 1>/dev/null"
-sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 " cd Checker && echo 'kali' | sudo -S ./Downloader.sh && echo -e '${Purple}uptime: $time${nc}' && echo '<==========================================================>' && echo -e '${Purple}spoofed ip is: $myip${nc}' && echo '<==========================================================>' && echo -e '${Purple}country: $country${nc}' && sudo rm -d -r Checker && echo '<==========================================================>'"
+sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "echo 'kali' | sudo -S git clone https://github.com/InFeduss/Sleep.git && cd Sleep && echo 'kali' | sudo -S chmod 777 sleeper.sh"
+sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "echo -e '${Purple}uptime: $time${nc}' && echo '<==========================================================>' && echo -e '${Purple}spoofed ip is: $myip${nc}' && echo '<==========================================================>' && echo -e '${Purple}country: $country${nc}' && echo '<==========================================================>'"
 sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "nmap -A $var11 && whois $var12" > /home/kali/results/result.txt
-sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "echo 'kali' | sudo -S shred /var/log/auth.log"
+sshpass -p $VPPASS ssh -T -o StrictHostKeyChecking=no $VPUSER@$var2 "cd Sleep && echo 'kali' | sudo -S bash sleeper.sh"
 
 echo -e "  \n"
 
